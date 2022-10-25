@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "jOVGijgqsiAoalMUgjHdbvn+DHdfRmb1Caz7scQoQ0L+/Igv2oYP4hS07nG77+TkHgfmKeBXhTrllgJtWYr8zg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\HP\\Desktop\\Programming Step IT\\C#\\WPF\\WPF - 2 Elvin on lesson\\WPF_Final_project\\Wpf_Final_project\\Wpf_Final_project.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\HP\\.nuget\\packages\\materialdesigncolors\\2.0.9\\materialdesigncolors.2.0.9.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\materialdesignthemes\\4.6.1\\materialdesignthemes.4.6.1.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\mvvmlightlibsstd10\\5.4.1.1\\mvvmlightlibsstd10.5.4.1.1.nupkg.sha512"
+  ],
+  "logs": []
+}
