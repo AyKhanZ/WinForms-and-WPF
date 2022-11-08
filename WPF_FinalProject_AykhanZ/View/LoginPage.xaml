@@ -1,0 +1,68 @@
+﻿<Window x:Class="WPF_FinalProject_AykhanZ.View.LoginPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_FinalProject_AykhanZ.View"
+        xmlns:mD="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:vm="clr-namespace:WPF_FinalProject_AykhanZ.ViewModel"
+        mc:Ignorable="d"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        
+        
+        Title="Login" Height="800" Width="1000"
+        
+        d:DataContext="{d:DesignInstance vm:LoginPageViewModel}"
+        >
+    <Grid RenderTransformOrigin="0.5,0.5" >
+        <Grid.Background>
+            <!--<ImageBrush ImageSource="C:\Users\HP\Desktop\Programming Step IT\C#\WPF\WPF - 2 Elvin on lesson\WPF_FinalExam\pictures\1617580039_57-p-neitralnii-delovoi-fon-dlya-prezentatsii-58.jpg"/>-->
+            <!--<ImageBrush ImageSource="C:\Users\HP\Desktop\Programming Step IT\C#\WPF\WPF - 2 Elvin on lesson\WPF_FinalExam\pictures\1660854623_12-kartinkin-net-p-delovie-oboi-krasivo-13.jpg"/>-->
+            <!--<ImageBrush ImageSource="C:\Users\HP\Desktop\Programming Step IT\C#\WPF\WPF - 2 Elvin on lesson\WPF_FinalExam\pictures\1663741639_g-14.jpg"/>-->
+            <!--<ImageBrush ImageSource="C:\Users\HP\Desktop\Programming Step IT\C#\WPF\WPF - 2 Elvin on lesson\WPF_FinalExam\pictures\1663741589_g-3.jpg"/>-->
+            <!--<ImageBrush ImageSource="C:\Users\HP\Desktop\Programming Step IT\C#\WPF\WPF - 2 Elvin on lesson\WPF_FinalExam\pictures\depositphotos_99127334-stock-illustration-flat-design-of-work-concept.jpg"/>-->
+            <!--<ImageBrush ImageSource="C:\Users\HP\Desktop\Programming Step IT\C#\WPF\WPF - 2 Elvin on lesson\WPF_FinalExam\pictures\1646035617_1-abrakadabra-fun-p-fon-dlya-teksta-v-instagramme-delovie-1.jpg"/>-->
+            <ImageBrush ImageSource="C:\Users\HP\Desktop\Programming Step IT\C#\WPF\WPF - 2 Elvin on lesson\WPF_FinalExam\pictures\todo lo que necesitas saber sobre el comercio electronico (1).png"/>
+        </Grid.Background>
+        <Border Margin="15,0,15,0" Padding="30" CornerRadius="35" MinWidth="400" MaxWidth="550" Height="700" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Border.Background>
+                <SolidColorBrush Color="Black" Opacity="0.8"/>
+            </Border.Background>
+            <Border.OpacityMask>
+                <SolidColorBrush Color="Black" Opacity="0.8"/>
+            </Border.OpacityMask>
+
+            <Border.Effect>
+                <DropShadowEffect ShadowDepth="0" BlurRadius="40" Color="purple"/>
+            </Border.Effect>
+            <StackPanel >
+                <Button Margin="10" mD:ShadowAssist.ShadowDepth="Depth3" Style="{DynamicResource MaterialDesignRaisedLightButton}" Content="{mD:PackIcon Kind=ExitToApp}" mD:ButtonAssist.CornerRadius="15" HorizontalAlignment="Right" Background="White" Height="30" Width="50" BorderBrush="#FF8924CF" FontSize="18" IsCancel="True" FontWeight="Normal"/>
+                <TextBlock FontSize="44" FontWeight="Bold" Text="Login" Margin="0,46,0,50" HorizontalAlignment="Center" Foreground="White" Width="120"/>
+
+                <TextBox mD:HintAssist.Hint="Enter Login" Style="{DynamicResource MaterialDesignFilledTextBox}" Margin="0,0,0,30" Foreground="#FF2AC79E" FontSize="20" BorderBrush="#FF2AC79E">
+                    <TextBox.Background>
+                        <SolidColorBrush Color="#0FFFFFFF" Opacity="0.8"/>
+                    </TextBox.Background>
+                </TextBox>
+                <PasswordBox mD:HintAssist.Hint="Enter Password" Style="{DynamicResource MaterialDesignFilledPasswordBox}" Foreground="#FF2AC79E" FontSize="20" BorderBrush="#FF2AC79E">
+                    <PasswordBox.Background>
+                        <SolidColorBrush Color="#0FFFFFFF" Opacity="0.8"/>
+                    </PasswordBox.Background>
+                </PasswordBox>
+
+
+                <Button Content="Log in" mD:ButtonAssist.CornerRadius="15" mD:ShadowAssist.ShadowDepth="Depth3" HorizontalAlignment="Center" Width="251" Margin="0,50,0,0" Background="#FF6833C8" Height="50" FontSize="24" Foreground="White" Grid.IsSharedSizeScope="True"/>
+                <TextBlock Text="Or Sign Up Using" HorizontalAlignment="Center" Margin="0,90,0,0" Foreground="White" FontSize="14" Background="Black"/>
+                <Button Content="Sign Up" mD:ButtonAssist.CornerRadius="15" mD:ShadowAssist.ShadowDepth="Depth3" HorizontalAlignment="Center" Margin="0,20,0,40" Style="{StaticResource MaterialDesignPaperLightButton}" BorderBrush="#FF6833C8"/>
+
+
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>
